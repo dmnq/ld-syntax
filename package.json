@@ -1,0 +1,47 @@
+{
+    "name": "ld-syntax",
+    "displayName": "Linker Script Syntax",
+    "description": "GNU ld linker script syntax highlighting support",
+    "version": "0.0.2",
+    "publisher": "dmnq",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "icon": "images/heckert_gnu.png",
+    "galleryBanner": {
+        "color": "#293845",
+        "theme": "dark"
+    },
+    "keywords": [
+        "language",
+        "linker",
+        "highlight",
+        "syntax"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/dmnq/ld-syntax",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dmnq/ld-syntax.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dmnq/ld-syntax/issues",
+        "email": "not@me.com"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ld",
+            "aliases": ["Linker Script", "ld"],
+            "extensions": [".ld",".dld",".lds"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ld",
+            "scopeName": "source.linker",
+            "path": "./syntaxes/ld.tmLanguage.json"
+        }]
+    }
+}
